@@ -11,7 +11,9 @@ public class Cubecontrolscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.up;
+        // s = x t  s- distance = u (velocity) * t (time)
 
+        if (Input. GetKey(KeyCode.UpArrow))
+        transform.position +=  Vector3.up * Time.deltaTime;
     }
 }
